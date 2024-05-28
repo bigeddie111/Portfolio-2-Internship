@@ -13,7 +13,7 @@
     color: white;
     text-decoration: none;
     font-family: 'brandon-grotesque';
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .items-div ul li{
@@ -23,13 +23,44 @@
 nav .navbar-brand{
     color: white;
     font-family: 'Mrs Saint Delafield';
-    font-size: 34px;
+    font-size: 40px;
     margin-left: .5em;
     margin-top: .5em;
     text-decoration: none;
 }
 
 /* About */
+.top-about {
+    display: flex;
+    flex-direction: column;
+    height: 30em;
+    margin-right: 3em;
+    margin-top: 5em;
+    background-image: url(./images/IMG_5587.JPG);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.top-about h1:nth-child(1) {
+    font-family: "";
+    font-size: 70px;
+    margin-left: 2em;
+    margin-top: 1em;
+    color: white;
+    width: 50%;
+}
+
+.top-about h1:nth-child(2) {
+    font-family: "";
+    font-size: 140px;
+    color: white;
+    margin-left: 1.35em;
+}
+.top-about img {
+    width: 40%;
+    height: 40%;
+}
 
 .about-container{
     display: flex;
@@ -43,7 +74,9 @@ nav .navbar-brand{
     margin-bottom: 170px;
 }
 
-
+.about-content {
+    margin-top: 7em;
+}
 
 .about-p{
     color: white;
@@ -68,16 +101,15 @@ nav .navbar-brand{
 /* Works */
 .works-container{
     margin-top: 10em;
+    margin-bottom: 2em;
     display: flex;
     flex-direction: row;
 }
 
-
-
 .works-sxse-container{
     background: url(./images/pixelcut-export.png);
     background-size: cover;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-position: center;
     border: solid 2px white;
     border-radius: 10px;
@@ -91,14 +123,17 @@ nav .navbar-brand{
 }
 
 
-
 .works-namaste-container{
+    background: url(./images/Screenshot_2024-05-28_141242-removebg-preview\ \(1\).png);
+    background-repeat: no-repeat;
     border: solid 2px white;
     border-radius: 10px;
     margin-left: 2vw;
     margin-right: 2vw;
     width: 40%;
-    height: 3em;
+    height: 35em;
+
+    transition: border .5s ease-out;
 }
 
 /* SXSE Page */
@@ -108,7 +143,7 @@ nav .navbar-brand{
 .sxse-intro{
     display: flex;
     flex-direction: column;
-    margin-top: 4em;
+    margin-top: 2em;
 }
 
 .sxse-main-title {
@@ -130,14 +165,23 @@ nav .navbar-brand{
     margin-right: auto;
 }
 
+.sxse-sprint-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: "brandon-grotesque";
+    text-align: center;
+}
 
-.sxse-sprints{
+.sxse-sprints-1-2{
     margin-left: 1rem ;
     margin-right: 1rem;
     margin-top: 4em;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 55em;
 }
 
 .sxse-sprint-1,
@@ -149,11 +193,7 @@ nav .navbar-brand{
     text-align: center;
 }
 
-.sxse-sprint-2 iframe {
-    width: 65%;
-    height: 92%;
-    
-}
+
 
 
 

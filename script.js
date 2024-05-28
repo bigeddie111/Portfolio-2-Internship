@@ -46,16 +46,17 @@ navLinks.forEach((link) => {
 const worksContainers = document.querySelector(".works-sxse-container")
 if (worksContainers) {
     worksContainers.addEventListener("mouseover", () => {
-        cursor.style.transform = "scale(7)";
-        worksContainers.style.border = "solid 20px #368EF3";  
-    })
-    
-    worksContainers.addEventListener("mouseleave", () => {
+            cursor.style.transform = "scale(7)";
+            worksContainers.style.border = "solid 20px #368EF3";  
+        })
+    } 
+
+ worksContainers.addEventListener("mouseleave", () => {
         cursor.style.transform = "scale(1)";
         worksContainers.style.border = "solid 2px white";
     })
+    
 
-}
 
 //About text scrolling animation
 window.addEventListener("scroll", () => {
@@ -74,6 +75,5 @@ window.addEventListener("scroll", () => {
 }) 
 
 
-//Making Close Bar Appear for SXSE Page
 
 
