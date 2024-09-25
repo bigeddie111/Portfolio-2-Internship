@@ -43,19 +43,32 @@ navLinks.forEach((link) => {
 
 
 //Changing cursor on hovering over sxse container and changing html source
-const worksContainers = document.querySelector(".works-sxse-container")
-if (worksContainers) {
-    worksContainers.addEventListener("mouseover", () => {
+const sxseWorksContainers = document.querySelector(".works-sxse-container")
+if (sxseWorksContainers) {
+    sxseWorksContainers.addEventListener("mouseover", () => {
             cursor.style.transform = "scale(7)";
-            worksContainers.style.border = "solid 20px #368EF3";  
+            sxseWorksContainers.style.border = "solid 20px #368EF3";  
         })
     } 
 
- worksContainers.addEventListener("mouseleave", () => {
+    sxseWorksContainers.addEventListener("mouseleave", () => {
         cursor.style.transform = "scale(1)";
-        worksContainers.style.border = "solid 2px white";
+        sxseWorksContainers.style.border = "solid 2px white";
     })
     
+
+const namasteWorksContainers = document.querySelector(".works-namaste-container")
+if (namasteWorksContainers) {
+    namasteWorksContainers.addEventListener("mouseover", () => {
+            cursor.style.transform = "scale(7)";
+            namasteWorksContainers.style.border = "solid 20px #368EF3";  
+        })
+    } 
+
+    namasteWorksContainers.addEventListener("mouseleave", () => {
+        cursor.style.transform = "scale(1)";
+        namasteWorksContainers.style.border = "solid 2px white";
+    })
 
 
 //About text scrolling animation

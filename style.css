@@ -124,7 +124,7 @@ nav .navbar-brand{
 
 
 .works-namaste-container{
-    background: url(./images/Screenshot_2024-05-28_141242-removebg-preview\ \(1\).png);
+    /* background: url(./images/namaste\ logo.png); */
     background-repeat: no-repeat;
     border: solid 2px white;
     border-radius: 10px;
@@ -134,6 +134,14 @@ nav .navbar-brand{
     height: 35em;
 
     transition: border .5s ease-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.works-namaste-container img {
+    width: 80%;
 }
 
 /* SXSE Page */
@@ -194,8 +202,48 @@ nav .navbar-brand{
 }
 
 
+/* Namaste Page */
 
+.namaste-body nav .navbar-brand {
+    color: black;
+    margin-left: 4em;
+}
 
+.namaste-body nav ul li a{
+    color: black;
+}
+.namaste-body{
+    background-image: linear-gradient(to left, #ffd931, #ff914d);
+}
+
+.namaste-details{
+    font-family: "brandon-grotesque";
+    font-size: 20px;
+    color: black;
+    margin-top: 7em;
+    margin-left: 11em;
+    text-align: start;
+}
+
+.namaste-site-imgs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.namaste-site-imgs img{
+    width: 80%;   
+}
+
+.namaste-site-imgs img:nth-child(2) {
+    margin-top: 3em;
+}
+
+.namaste-site-imgs img:nth-child(3) {
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
 
 /* Animations & Effects */
 
