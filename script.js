@@ -1,28 +1,33 @@
 const cursor = document.querySelector(".cursor-dot");
-let mouseX = 0;
-let mouseY = 0;
-let cursorX = 0;
-let cursorY = 0;
-const speed = 0.4; // Adjust this value to control the speed of the cursor
 
-document.addEventListener("mousemove", (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-});
+const desktop = window.matchMedia("(min-width: 769px)").matches;
 
-function updateCursor() {
-    const dx = mouseX - cursorX;
-    const dy = mouseY - cursorY;
-    cursorX += dx * speed;
-    cursorY += dy * speed;
+if (desktop) {
 
-    cursor.style.top = cursorY + "px";
-    cursor.style.left = cursorX + "px";
+    let mouseX = 0;
+    let mouseY = 0;
+    let cursorX = 0;
+    let cursorY = 0;
+    const speed = 0.4;
 
-    requestAnimationFrame(updateCursor);
-}
+    document.addEventListener("mousemove",(e)=>{
+        mouseX=e.clientX;
+        mouseY=e.clientY;
+    });
 
-updateCursor();
+    function updateCursor(){
+
+        cursorX+=(mouseX-cursorX)*speed;
+        cursorY+=(mouseY-cursorY)*speed;
+
+        cursor.style.left=cursorX+"px";
+        cursor.style.top=cursorY+"px";
+
+        requestAnimationFrame(updateCursor);
+
+    }
+
+    updateCursor();
 
 
 //Changing cursor on hovering over navingation elements
@@ -70,7 +75,7 @@ if (namasteWorksContainers) {
         namasteWorksContainers.style.border = "solid 2px white";
     })
 
-
+}
 //About text scrolling animation
 window.addEventListener("scroll", () => {
     let reveal = document.querySelectorAll(".about-p")

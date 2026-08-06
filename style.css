@@ -37,7 +37,7 @@ nav .navbar-brand{
     margin-right: 3em;
     margin-top: 5em;
     background-image: url(./images/IMG_5587.JPG);
-    background-size: 40%;
+    background-size: 30%;
     background-repeat: no-repeat;
     background-position: right top;
 }
@@ -263,3 +263,240 @@ nav .navbar-brand:hover{
 
 
 
+/* ===========================================
+   Laptop / Tablet (<1200px)
+===========================================*/
+
+@media (max-width:1200px){
+
+    /* ---------- About ---------- */
+
+    .top-about{
+
+        margin:4rem 3rem;
+        height:auto;
+
+        background-size:25%;
+
+    }
+
+    .top-about h1:nth-child(1){
+
+        font-size:55px;
+        width:100%;
+        margin-left:1rem;
+
+    }
+
+    .top-about h1:nth-child(2){
+
+        font-size:105px;
+        margin-left:0.5rem;
+
+    }
+
+    .about-p{
+
+        padding:0 2rem;
+
+    }
+
+    /* ---------- Works ---------- */
+
+    .works-container{
+
+        flex-direction:column;
+        align-items:center;
+        gap:2rem;
+
+    }
+
+    .works-sxse-container,
+    .works-namaste-container{
+
+        width:80%;
+        margin:0;
+
+    }
+
+    .works-sxse-container{
+
+        height:28rem;
+
+    }
+
+    .works-namaste-container{
+
+        height:28rem;
+
+    }
+
+    .works-namaste-container img {
+        width: 50%;
+    }
+
+    /* ---------- SXSE ---------- */
+
+    .sxse-sprints-1-2{
+
+        flex-direction:column;
+        height:auto;
+        gap:3rem;
+        width:90%;
+        margin:auto;
+
+    }
+
+    .sxse-video,
+    .sxse-frame,
+    iframe,
+    video{
+
+        width:100%;
+        max-width:650px;
+        height:auto;
+
+    }
+
+    iframe{
+
+        height:450px;
+
+    }
+
+    /* ---------- Namaste ---------- */
+
+    .namaste-details{
+
+        margin:5rem 2rem;
+        font-size:18px;
+
+    }
+
+    .namaste-site-imgs img{
+
+        width:95%;
+
+    }
+
+}
+
+/* ===========================================
+   Tablet & Mobile
+===========================================*/
+
+@media (max-width:768px){
+
+    /* Hide custom cursor */
+
+    .cursor-dot{
+
+        display:none;
+
+    }
+
+    body{
+
+        cursor:auto;
+
+    }
+
+    /* ---------- Hero ---------- */
+
+    .top-about{
+
+        background-image:none;
+
+        text-align:center;
+
+        margin:2rem 1rem;
+
+        align-items:center;
+
+    }
+
+    .top-about h1:nth-child(1){
+
+        width:100%;
+        font-size:38px;
+        margin:0;
+
+    }
+
+    .top-about h1:nth-child(2){
+
+        font-size:58px;
+        margin:0;
+
+    }
+
+    /* ---------- About ---------- */
+
+    .about-p{
+
+        font-size:18px;
+
+    }
+
+    /* ---------- Works ---------- */
+
+    .works-sxse-container,
+    .works-namaste-container{
+
+        width:95%;
+        height:240px;
+
+    }
+
+    .works-namaste-container img{
+
+        width:35%;
+
+    }
+
+    /* ---------- SXSE ---------- */
+
+    .sxse-main-title{
+
+        font-size:2rem;
+
+    }
+
+    .sxse-intro p{
+
+        width:90%;
+        font-size:18px;
+
+    }
+
+    iframe{
+
+        height:300px;
+
+    }
+
+    .sxse-sprint-3 img{
+
+        width:95%;
+
+    }
+
+    /* ---------- Namaste ---------- */
+
+    .namaste-details{
+
+        margin:3rem 1rem;
+
+    }
+
+}@media (hover:none){
+
+    .works-sxse-container,
+    .works-namaste-container{
+
+        border:2px solid white !important;
+        transition:none;
+
+    }
+
+}
